@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		805C6D38CEFAAD500B1289DD /* Pods_cvmet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2AD6EBE1E959ACE21E49440 /* Pods_cvmet.framework */; };
 		E905A5A52438E3DA0083D67B /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E905A5A42438E3DA0083D67B /* PushNotificationManager.swift */; };
 		E905A5A72438E6AD0083D67B /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E905A5A62438E6AD0083D67B /* TokenModel.swift */; };
 		E905A5A92438E7BC0083D67B /* UpdateTokenResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E905A5A82438E7BC0083D67B /* UpdateTokenResult.swift */; };
@@ -41,12 +40,13 @@
 		E9DEC01523DA246700EDDDAA /* HistorialMedicoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DEC01423DA246700EDDDAA /* HistorialMedicoModel.swift */; };
 		E9DEC01923DA283900EDDDAA /* CacheModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DEC01823DA283900EDDDAA /* CacheModel.swift */; };
 		E9DEC01B23DA2B5B00EDDDAA /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DEC01A23DA2B5B00EDDDAA /* CustomImageView.swift */; };
+		FB9DAAFF573B774111FE0D80 /* Pods_cvmet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8433F39A9C17AF870415B82C /* Pods_cvmet.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		06D8E1843DE3CBB45B7BC213 /* Pods-cvmet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cvmet.debug.xcconfig"; path = "Target Support Files/Pods-cvmet/Pods-cvmet.debug.xcconfig"; sourceTree = "<group>"; };
-		0910CAC5EA57524430DE02E2 /* Pods-cvmet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cvmet.release.xcconfig"; path = "Target Support Files/Pods-cvmet/Pods-cvmet.release.xcconfig"; sourceTree = "<group>"; };
-		C2AD6EBE1E959ACE21E49440 /* Pods_cvmet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cvmet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		07EC5400617696F4981A98B3 /* Pods-cvmet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cvmet.release.xcconfig"; path = "Target Support Files/Pods-cvmet/Pods-cvmet.release.xcconfig"; sourceTree = "<group>"; };
+		792B5AEBF4A2415C5EEC48BF /* Pods-cvmet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cvmet.debug.xcconfig"; path = "Target Support Files/Pods-cvmet/Pods-cvmet.debug.xcconfig"; sourceTree = "<group>"; };
+		8433F39A9C17AF870415B82C /* Pods_cvmet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cvmet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E905A5A42438E3DA0083D67B /* PushNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationManager.swift; sourceTree = "<group>"; };
 		E905A5A62438E6AD0083D67B /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
 		E905A5A82438E7BC0083D67B /* UpdateTokenResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTokenResult.swift; sourceTree = "<group>"; };
@@ -90,17 +90,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				805C6D38CEFAAD500B1289DD /* Pods_cvmet.framework in Frameworks */,
+				FB9DAAFF573B774111FE0D80 /* Pods_cvmet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		46CEC20D4216B16D3FE321A1 /* Frameworks */ = {
+		5D99EA404480DEBC1FCB4267 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C2AD6EBE1E959ACE21E49440 /* Pods_cvmet.framework */,
+				8433F39A9C17AF870415B82C /* Pods_cvmet.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,7 +111,7 @@
 				E92879A723D628FB0096EC59 /* cvmet */,
 				E92879A623D628FB0096EC59 /* Products */,
 				EB2EA4575F4DDC8B7FD9B756 /* Pods */,
-				46CEC20D4216B16D3FE321A1 /* Frameworks */,
+				5D99EA404480DEBC1FCB4267 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,20 +128,11 @@
 			children = (
 				E97B102C2436E28E00EE250F /* cvmet.entitlements */,
 				E9DEC00523D9F9CD00EDDDAA /* Model */,
+				E965AE8B29DB899200A8FDF6 /* Controllers */,
 				E92879BD23D660D80096EC59 /* CustomControls */,
+				E965AE8C29DB8AC700A8FDF6 /* TableViewCells */,
 				E92879A823D628FB0096EC59 /* AppDelegate.swift */,
 				E905A5A42438E3DA0083D67B /* PushNotificationManager.swift */,
-				E92879AA23D628FB0096EC59 /* LoginViewController.swift */,
-				E92879C223D789980096EC59 /* InicioTabBarController.swift */,
-				E92879C423D78BE30096EC59 /* HomeViewController.swift */,
-				E92879C623D791210096EC59 /* MascotasTableViewCell.swift */,
-				E92879C823D792B20096EC59 /* DetalleMascotaViewController.swift */,
-				E92BFBC423DBB53F003B9AB6 /* CuadroVacunacionViewController.swift */,
-				E9D3286F23DA52F8000688B6 /* CuadroVacunacionTableViewCell.swift */,
-				E92BFBC623DBB573003B9AB6 /* HistoriaMedicaViewController.swift */,
-				E92BFBC823DBCC37003B9AB6 /* HistoriaMedicaTableViewCell.swift */,
-				E92BFBCC23DBE84B003B9AB6 /* DetalleHistoriaTableViewCell.swift */,
-				E98D22B525B38BCE00BC0B14 /* InformacionViewController.swift */,
 				E92879AC23D628FB0096EC59 /* Main.storyboard */,
 				E92879B223D628FD0096EC59 /* Assets.xcassets */,
 				E92879B423D628FD0096EC59 /* LaunchScreen.storyboard */,
@@ -160,6 +151,31 @@
 				E9DEC01A23DA2B5B00EDDDAA /* CustomImageView.swift */,
 			);
 			path = CustomControls;
+			sourceTree = "<group>";
+		};
+		E965AE8B29DB899200A8FDF6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E92879AA23D628FB0096EC59 /* LoginViewController.swift */,
+				E92879C423D78BE30096EC59 /* HomeViewController.swift */,
+				E98D22B525B38BCE00BC0B14 /* InformacionViewController.swift */,
+				E92BFBC623DBB573003B9AB6 /* HistoriaMedicaViewController.swift */,
+				E92BFBC423DBB53F003B9AB6 /* CuadroVacunacionViewController.swift */,
+				E92879C823D792B20096EC59 /* DetalleMascotaViewController.swift */,
+				E92879C223D789980096EC59 /* InicioTabBarController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E965AE8C29DB8AC700A8FDF6 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				E92879C623D791210096EC59 /* MascotasTableViewCell.swift */,
+				E9D3286F23DA52F8000688B6 /* CuadroVacunacionTableViewCell.swift */,
+				E92BFBC823DBCC37003B9AB6 /* HistoriaMedicaTableViewCell.swift */,
+				E92BFBCC23DBE84B003B9AB6 /* DetalleHistoriaTableViewCell.swift */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 		E9DEC00523D9F9CD00EDDDAA /* Model */ = {
@@ -184,8 +200,8 @@
 		EB2EA4575F4DDC8B7FD9B756 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				06D8E1843DE3CBB45B7BC213 /* Pods-cvmet.debug.xcconfig */,
-				0910CAC5EA57524430DE02E2 /* Pods-cvmet.release.xcconfig */,
+				792B5AEBF4A2415C5EEC48BF /* Pods-cvmet.debug.xcconfig */,
+				07EC5400617696F4981A98B3 /* Pods-cvmet.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -197,11 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E92879BA23D628FD0096EC59 /* Build configuration list for PBXNativeTarget "cvmet" */;
 			buildPhases = (
-				C4B8B3B11FC244D831EBE487 /* [CP] Check Pods Manifest.lock */,
+				13CBA6E82849746E13ECC67B /* [CP] Check Pods Manifest.lock */,
 				E92879A123D628FB0096EC59 /* Sources */,
 				E92879A223D628FB0096EC59 /* Frameworks */,
 				E92879A323D628FB0096EC59 /* Resources */,
-				E65B007A16A746075114F80F /* [CP] Embed Pods Frameworks */,
+				94DA611F04A7418BC898FD47 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -265,7 +281,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C4B8B3B11FC244D831EBE487 /* [CP] Check Pods Manifest.lock */ = {
+		13CBA6E82849746E13ECC67B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -287,7 +303,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E65B007A16A746075114F80F /* [CP] Embed Pods Frameworks */ = {
+		94DA611F04A7418BC898FD47 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -416,7 +432,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -471,7 +487,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -483,14 +499,14 @@
 		};
 		E92879BB23D628FD0096EC59 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06D8E1843DE3CBB45B7BC213 /* Pods-cvmet.debug.xcconfig */;
+			baseConfigurationReference = 792B5AEBF4A2415C5EEC48BF /* Pods-cvmet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = cvmet/cvmet.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 92L8J2476L;
 				INFOPLIST_FILE = cvmet/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -504,14 +520,14 @@
 		};
 		E92879BC23D628FD0096EC59 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0910CAC5EA57524430DE02E2 /* Pods-cvmet.release.xcconfig */;
+			baseConfigurationReference = 07EC5400617696F4981A98B3 /* Pods-cvmet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = cvmet/cvmet.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 92L8J2476L;
 				INFOPLIST_FILE = cvmet/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -15,7 +15,7 @@ class ServicesManager: NSObject {
         
         let urlLogin = "http://alanyj2019-002-site1.ctempurl.com/Geo.svc/CheckSt"
         
-        let headers = [
+        let headers: HTTPHeaders = [
             "Accept": "application/json",
             "Content-Type": "application/json" ]
         
@@ -24,7 +24,8 @@ class ServicesManager: NSObject {
             "Pass": loginRequestPassword
         ]
         
-        Alamofire.request(urlLogin, method: .post, parameters: parameters, encoding: Alamofire.JSONEncoding.default, headers: headers).response { response in
+        AF.request(urlLogin, method: .post, parameters: parameters, encoding: Alamofire.JSONEncoding.default, headers: headers).response { response in
+            
             guard let data = response.data else { return }
             do {
                 let decoder = JSONDecoder()
@@ -62,6 +63,7 @@ class ServicesManager: NSObject {
                 print(error)
                 completion(nil)
             }
+            
         }
     }
     
@@ -69,7 +71,7 @@ class ServicesManager: NSObject {
         
         let urlToken = "http://alanyj2019-002-site1.ctempurl.com/Geo.svc/UpdateToken"
         
-        let headers = [
+        let headers: HTTPHeaders = [
             "Accept": "application/json",
             "Content-Type": "application/json" ]
         
@@ -78,7 +80,8 @@ class ServicesManager: NSObject {
             "Token": token
         ]
         
-        Alamofire.request(urlToken, method: .post, parameters: parameters, encoding: Alamofire.JSONEncoding.default, headers: headers).response { response in
+        AF.request(urlToken, method: .post, parameters: parameters, encoding: Alamofire.JSONEncoding.default, headers: headers).response { response in
+            
             guard let data = response.data else { return }
             do {
                 let decoder = JSONDecoder()
@@ -92,6 +95,7 @@ class ServicesManager: NSObject {
                 print(error)
                 completion(nil)
             }
+            
         }
     }
     
