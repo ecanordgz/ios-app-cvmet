@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		805C6D38CEFAAD500B1289DD /* Pods_cvmet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2AD6EBE1E959ACE21E49440 /* Pods_cvmet.framework */; };
+		E905A5A52438E3DA0083D67B /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E905A5A42438E3DA0083D67B /* PushNotificationManager.swift */; };
+		E905A5A72438E6AD0083D67B /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E905A5A62438E6AD0083D67B /* TokenModel.swift */; };
+		E905A5A92438E7BC0083D67B /* UpdateTokenResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E905A5A82438E7BC0083D67B /* UpdateTokenResult.swift */; };
+		E92879A923D628FB0096EC59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92879A823D628FB0096EC59 /* AppDelegate.swift */; };
+		E92879AB23D628FB0096EC59 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92879AA23D628FB0096EC59 /* LoginViewController.swift */; };
+		E92879AE23D628FB0096EC59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92879AC23D628FB0096EC59 /* Main.storyboard */; };
+		E92879B123D628FB0096EC59 /* cvmet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E92879AF23D628FB0096EC59 /* cvmet.xcdatamodeld */; };
+		E92879B323D628FD0096EC59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E92879B223D628FD0096EC59 /* Assets.xcassets */; };
+		E92879B623D628FD0096EC59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92879B423D628FD0096EC59 /* LaunchScreen.storyboard */; };
+		E92879BF23D661520096EC59 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92879BE23D661520096EC59 /* CustomButton.swift */; };
+		E92879C123D785760096EC59 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92879C023D785760096EC59 /* CustomView.swift */; };
+		E92879C323D789980096EC59 /* InicioTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92879C223D789980096EC59 /* InicioTabBarController.swift */; };
+		E92879C523D78BE30096EC59 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92879C423D78BE30096EC59 /* HomeViewController.swift */; };
+		E92879C723D791210096EC59 /* MascotasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92879C623D791210096EC59 /* MascotasTableViewCell.swift */; };
+		E92879C923D792B20096EC59 /* DetalleMascotaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92879C823D792B20096EC59 /* DetalleMascotaViewController.swift */; };
+		E92BFBC523DBB53F003B9AB6 /* CuadroVacunacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92BFBC423DBB53F003B9AB6 /* CuadroVacunacionViewController.swift */; };
+		E92BFBC723DBB573003B9AB6 /* HistoriaMedicaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92BFBC623DBB573003B9AB6 /* HistoriaMedicaViewController.swift */; };
+		E92BFBC923DBCC37003B9AB6 /* HistoriaMedicaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92BFBC823DBCC37003B9AB6 /* HistoriaMedicaTableViewCell.swift */; };
+		E92BFBCB23DBE4CA003B9AB6 /* DetalleHistoriaMedicaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92BFBCA23DBE4CA003B9AB6 /* DetalleHistoriaMedicaModel.swift */; };
+		E92BFBCD23DBE84B003B9AB6 /* DetalleHistoriaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92BFBCC23DBE84B003B9AB6 /* DetalleHistoriaTableViewCell.swift */; };
+		E970B2062438E2AE00AD037C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E970B2052438E2AE00AD037C /* GoogleService-Info.plist */; };
+		E98D22B625B38BCE00BC0B14 /* InformacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98D22B525B38BCE00BC0B14 /* InformacionViewController.swift */; };
+		E9D3287023DA52F8000688B6 /* CuadroVacunacionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D3286F23DA52F8000688B6 /* CuadroVacunacionTableViewCell.swift */; };
+		E9DEC00723D9FA5500EDDDAA /* ServicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DEC00623D9FA5500EDDDAA /* ServicesManager.swift */; };
+		E9DEC00923DA058000EDDDAA /* CheckStResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DEC00823DA058000EDDDAA /* CheckStResult.swift */; };
+		E9DEC00B23DA148000EDDDAA /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DEC00A23DA148000EDDDAA /* LoginModel.swift */; };
+		E9DEC00D23DA18C000EDDDAA /* MascotaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DEC00C23DA18C000EDDDAA /* MascotaModel.swift */; };
+		E9DEC00F23DA1FFC00EDDDAA /* CuadroVacunasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DEC00E23DA1FFC00EDDDAA /* CuadroVacunasModel.swift */; };
+		E9DEC01123DA203100EDDDAA /* HistorialVacunasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DEC01023DA203100EDDDAA /* HistorialVacunasModel.swift */; };
+		E9DEC01323DA204A00EDDDAA /* ProximasVacunasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DEC01223DA204A00EDDDAA /* ProximasVacunasModel.swift */; };
+		E9DEC01523DA246700EDDDAA /* HistorialMedicoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DEC01423DA246700EDDDAA /* HistorialMedicoModel.swift */; };
+		E9DEC01923DA283900EDDDAA /* CacheModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DEC01823DA283900EDDDAA /* CacheModel.swift */; };
+		E9DEC01B23DA2B5B00EDDDAA /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DEC01A23DA2B5B00EDDDAA /* CustomImageView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06D8E1843DE3CBB45B7BC213 /* Pods-cvmet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cvmet.debug.xcconfig"; path = "Target Support Files/Pods-cvmet/Pods-cvmet.debug.xcconfig"; sourceTree = "<group>"; };
+		0910CAC5EA57524430DE02E2 /* Pods-cvmet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cvmet.release.xcconfig"; path = "Target Support Files/Pods-cvmet/Pods-cvmet.release.xcconfig"; sourceTree = "<group>"; };
+		C2AD6EBE1E959ACE21E49440 /* Pods_cvmet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cvmet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E905A5A42438E3DA0083D67B /* PushNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationManager.swift; sourceTree = "<group>"; };
+		E905A5A62438E6AD0083D67B /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
+		E905A5A82438E7BC0083D67B /* UpdateTokenResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTokenResult.swift; sourceTree = "<group>"; };
+		E92879A523D628FB0096EC59 /* cvmet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cvmet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E92879A823D628FB0096EC59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E92879AA23D628FB0096EC59 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E92879AD23D628FB0096EC59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E92879B023D628FB0096EC59 /* cvmet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = cvmet.xcdatamodel; sourceTree = "<group>"; };
+		E92879B223D628FD0096EC59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E92879B523D628FD0096EC59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E92879B723D628FD0096EC59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E92879BE23D661520096EC59 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		E92879C023D785760096EC59 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		E92879C223D789980096EC59 /* InicioTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioTabBarController.swift; sourceTree = "<group>"; };
+		E92879C423D78BE30096EC59 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E92879C623D791210096EC59 /* MascotasTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MascotasTableViewCell.swift; sourceTree = "<group>"; };
+		E92879C823D792B20096EC59 /* DetalleMascotaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleMascotaViewController.swift; sourceTree = "<group>"; };
+		E92BFBC423DBB53F003B9AB6 /* CuadroVacunacionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuadroVacunacionViewController.swift; sourceTree = "<group>"; };
+		E92BFBC623DBB573003B9AB6 /* HistoriaMedicaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoriaMedicaViewController.swift; sourceTree = "<group>"; };
+		E92BFBC823DBCC37003B9AB6 /* HistoriaMedicaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoriaMedicaTableViewCell.swift; sourceTree = "<group>"; };
+		E92BFBCA23DBE4CA003B9AB6 /* DetalleHistoriaMedicaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleHistoriaMedicaModel.swift; sourceTree = "<group>"; };
+		E92BFBCC23DBE84B003B9AB6 /* DetalleHistoriaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleHistoriaTableViewCell.swift; sourceTree = "<group>"; };
+		E970B2052438E2AE00AD037C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E97B102C2436E28E00EE250F /* cvmet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = cvmet.entitlements; sourceTree = "<group>"; };
+		E98D22B525B38BCE00BC0B14 /* InformacionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformacionViewController.swift; sourceTree = "<group>"; };
+		E9D3286F23DA52F8000688B6 /* CuadroVacunacionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuadroVacunacionTableViewCell.swift; sourceTree = "<group>"; };
+		E9DEC00623D9FA5500EDDDAA /* ServicesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesManager.swift; sourceTree = "<group>"; };
+		E9DEC00823DA058000EDDDAA /* CheckStResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckStResult.swift; sourceTree = "<group>"; };
+		E9DEC00A23DA148000EDDDAA /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		E9DEC00C23DA18C000EDDDAA /* MascotaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MascotaModel.swift; sourceTree = "<group>"; };
+		E9DEC00E23DA1FFC00EDDDAA /* CuadroVacunasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuadroVacunasModel.swift; sourceTree = "<group>"; };
+		E9DEC01023DA203100EDDDAA /* HistorialVacunasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistorialVacunasModel.swift; sourceTree = "<group>"; };
+		E9DEC01223DA204A00EDDDAA /* ProximasVacunasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximasVacunasModel.swift; sourceTree = "<group>"; };
+		E9DEC01423DA246700EDDDAA /* HistorialMedicoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistorialMedicoModel.swift; sourceTree = "<group>"; };
+		E9DEC01823DA283900EDDDAA /* CacheModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheModel.swift; sourceTree = "<group>"; };
+		E9DEC01A23DA2B5B00EDDDAA /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E92879A223D628FB0096EC59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				805C6D38CEFAAD500B1289DD /* Pods_cvmet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46CEC20D4216B16D3FE321A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2AD6EBE1E959ACE21E49440 /* Pods_cvmet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E928799C23D628FB0096EC59 = {
+			isa = PBXGroup;
+			children = (
+				E92879A723D628FB0096EC59 /* cvmet */,
+				E92879A623D628FB0096EC59 /* Products */,
+				EB2EA4575F4DDC8B7FD9B756 /* Pods */,
+				46CEC20D4216B16D3FE321A1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E92879A623D628FB0096EC59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E92879A523D628FB0096EC59 /* cvmet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E92879A723D628FB0096EC59 /* cvmet */ = {
+			isa = PBXGroup;
+			children = (
+				E97B102C2436E28E00EE250F /* cvmet.entitlements */,
+				E9DEC00523D9F9CD00EDDDAA /* Model */,
+				E92879BD23D660D80096EC59 /* CustomControls */,
+				E92879A823D628FB0096EC59 /* AppDelegate.swift */,
+				E905A5A42438E3DA0083D67B /* PushNotificationManager.swift */,
+				E92879AA23D628FB0096EC59 /* LoginViewController.swift */,
+				E92879C223D789980096EC59 /* InicioTabBarController.swift */,
+				E92879C423D78BE30096EC59 /* HomeViewController.swift */,
+				E92879C623D791210096EC59 /* MascotasTableViewCell.swift */,
+				E92879C823D792B20096EC59 /* DetalleMascotaViewController.swift */,
+				E92BFBC423DBB53F003B9AB6 /* CuadroVacunacionViewController.swift */,
+				E9D3286F23DA52F8000688B6 /* CuadroVacunacionTableViewCell.swift */,
+				E92BFBC623DBB573003B9AB6 /* HistoriaMedicaViewController.swift */,
+				E92BFBC823DBCC37003B9AB6 /* HistoriaMedicaTableViewCell.swift */,
+				E92BFBCC23DBE84B003B9AB6 /* DetalleHistoriaTableViewCell.swift */,
+				E98D22B525B38BCE00BC0B14 /* InformacionViewController.swift */,
+				E92879AC23D628FB0096EC59 /* Main.storyboard */,
+				E92879B223D628FD0096EC59 /* Assets.xcassets */,
+				E92879B423D628FD0096EC59 /* LaunchScreen.storyboard */,
+				E92879B723D628FD0096EC59 /* Info.plist */,
+				E970B2052438E2AE00AD037C /* GoogleService-Info.plist */,
+				E92879AF23D628FB0096EC59 /* cvmet.xcdatamodeld */,
+			);
+			path = cvmet;
+			sourceTree = "<group>";
+		};
+		E92879BD23D660D80096EC59 /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+				E92879BE23D661520096EC59 /* CustomButton.swift */,
+				E92879C023D785760096EC59 /* CustomView.swift */,
+				E9DEC01A23DA2B5B00EDDDAA /* CustomImageView.swift */,
+			);
+			path = CustomControls;
+			sourceTree = "<group>";
+		};
+		E9DEC00523D9F9CD00EDDDAA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E9DEC00623D9FA5500EDDDAA /* ServicesManager.swift */,
+				E9DEC01823DA283900EDDDAA /* CacheModel.swift */,
+				E9DEC00A23DA148000EDDDAA /* LoginModel.swift */,
+				E905A5A62438E6AD0083D67B /* TokenModel.swift */,
+				E9DEC00823DA058000EDDDAA /* CheckStResult.swift */,
+				E905A5A82438E7BC0083D67B /* UpdateTokenResult.swift */,
+				E9DEC00C23DA18C000EDDDAA /* MascotaModel.swift */,
+				E9DEC00E23DA1FFC00EDDDAA /* CuadroVacunasModel.swift */,
+				E9DEC01023DA203100EDDDAA /* HistorialVacunasModel.swift */,
+				E9DEC01223DA204A00EDDDAA /* ProximasVacunasModel.swift */,
+				E9DEC01423DA246700EDDDAA /* HistorialMedicoModel.swift */,
+				E92BFBCA23DBE4CA003B9AB6 /* DetalleHistoriaMedicaModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB2EA4575F4DDC8B7FD9B756 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06D8E1843DE3CBB45B7BC213 /* Pods-cvmet.debug.xcconfig */,
+				0910CAC5EA57524430DE02E2 /* Pods-cvmet.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E92879A423D628FB0096EC59 /* cvmet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E92879BA23D628FD0096EC59 /* Build configuration list for PBXNativeTarget "cvmet" */;
+			buildPhases = (
+				C4B8B3B11FC244D831EBE487 /* [CP] Check Pods Manifest.lock */,
+				E92879A123D628FB0096EC59 /* Sources */,
+				E92879A223D628FB0096EC59 /* Frameworks */,
+				E92879A323D628FB0096EC59 /* Resources */,
+				E65B007A16A746075114F80F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cvmet;
+			productName = cvmet;
+			productReference = E92879A523D628FB0096EC59 /* cvmet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E928799D23D628FB0096EC59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Enrique Cano";
+				TargetAttributes = {
+					E92879A423D628FB0096EC59 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = E92879A023D628FB0096EC59 /* Build configuration list for PBXProject "cvmet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E928799C23D628FB0096EC59;
+			productRefGroup = E92879A623D628FB0096EC59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E92879A423D628FB0096EC59 /* cvmet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E92879A323D628FB0096EC59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E92879B623D628FD0096EC59 /* LaunchScreen.storyboard in Resources */,
+				E970B2062438E2AE00AD037C /* GoogleService-Info.plist in Resources */,
+				E92879B323D628FD0096EC59 /* Assets.xcassets in Resources */,
+				E92879AE23D628FB0096EC59 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C4B8B3B11FC244D831EBE487 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cvmet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E65B007A16A746075114F80F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cvmet/Pods-cvmet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cvmet/Pods-cvmet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-cvmet/Pods-cvmet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E92879A123D628FB0096EC59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9DEC00D23DA18C000EDDDAA /* MascotaModel.swift in Sources */,
+				E905A5A72438E6AD0083D67B /* TokenModel.swift in Sources */,
+				E92879C323D789980096EC59 /* InicioTabBarController.swift in Sources */,
+				E905A5A52438E3DA0083D67B /* PushNotificationManager.swift in Sources */,
+				E9DEC00B23DA148000EDDDAA /* LoginModel.swift in Sources */,
+				E905A5A92438E7BC0083D67B /* UpdateTokenResult.swift in Sources */,
+				E92879C123D785760096EC59 /* CustomView.swift in Sources */,
+				E92BFBC923DBCC37003B9AB6 /* HistoriaMedicaTableViewCell.swift in Sources */,
+				E9DEC01523DA246700EDDDAA /* HistorialMedicoModel.swift in Sources */,
+				E92879BF23D661520096EC59 /* CustomButton.swift in Sources */,
+				E9DEC01923DA283900EDDDAA /* CacheModel.swift in Sources */,
+				E9DEC00F23DA1FFC00EDDDAA /* CuadroVacunasModel.swift in Sources */,
+				E92879C923D792B20096EC59 /* DetalleMascotaViewController.swift in Sources */,
+				E92879AB23D628FB0096EC59 /* LoginViewController.swift in Sources */,
+				E98D22B625B38BCE00BC0B14 /* InformacionViewController.swift in Sources */,
+				E9DEC01123DA203100EDDDAA /* HistorialVacunasModel.swift in Sources */,
+				E92BFBC523DBB53F003B9AB6 /* CuadroVacunacionViewController.swift in Sources */,
+				E92879C723D791210096EC59 /* MascotasTableViewCell.swift in Sources */,
+				E9DEC01B23DA2B5B00EDDDAA /* CustomImageView.swift in Sources */,
+				E9DEC01323DA204A00EDDDAA /* ProximasVacunasModel.swift in Sources */,
+				E92BFBCD23DBE84B003B9AB6 /* DetalleHistoriaTableViewCell.swift in Sources */,
+				E9D3287023DA52F8000688B6 /* CuadroVacunacionTableViewCell.swift in Sources */,
+				E92879B123D628FB0096EC59 /* cvmet.xcdatamodeld in Sources */,
+				E92BFBCB23DBE4CA003B9AB6 /* DetalleHistoriaMedicaModel.swift in Sources */,
+				E92879C523D78BE30096EC59 /* HomeViewController.swift in Sources */,
+				E92BFBC723DBB573003B9AB6 /* HistoriaMedicaViewController.swift in Sources */,
+				E9DEC00923DA058000EDDDAA /* CheckStResult.swift in Sources */,
+				E92879A923D628FB0096EC59 /* AppDelegate.swift in Sources */,
+				E9DEC00723D9FA5500EDDDAA /* ServicesManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E92879AC23D628FB0096EC59 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E92879AD23D628FB0096EC59 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E92879B423D628FD0096EC59 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E92879B523D628FD0096EC59 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E92879B823D628FD0096EC59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E92879B923D628FD0096EC59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E92879BB23D628FD0096EC59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06D8E1843DE3CBB45B7BC213 /* Pods-cvmet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = cvmet/cvmet.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 92L8J2476L;
+				INFOPLIST_FILE = cvmet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ecanordgz.cvmet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E92879BC23D628FD0096EC59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0910CAC5EA57524430DE02E2 /* Pods-cvmet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = cvmet/cvmet.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 92L8J2476L;
+				INFOPLIST_FILE = cvmet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ecanordgz.cvmet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E92879A023D628FB0096EC59 /* Build configuration list for PBXProject "cvmet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E92879B823D628FD0096EC59 /* Debug */,
+				E92879B923D628FD0096EC59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E92879BA23D628FD0096EC59 /* Build configuration list for PBXNativeTarget "cvmet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E92879BB23D628FD0096EC59 /* Debug */,
+				E92879BC23D628FD0096EC59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E92879AF23D628FB0096EC59 /* cvmet.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E92879B023D628FB0096EC59 /* cvmet.xcdatamodel */,
+			);
+			currentVersion = E92879B023D628FB0096EC59 /* cvmet.xcdatamodel */;
+			path = cvmet.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E928799D23D628FB0096EC59 /* Project object */;
+}

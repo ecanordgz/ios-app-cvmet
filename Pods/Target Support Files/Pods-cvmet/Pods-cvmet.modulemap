@@ -1,0 +1,6 @@
+framework module Pods_cvmet {
+  umbrella header "Pods-cvmet-umbrella.h"
+
+  export *
+  module * { export * }
+}
